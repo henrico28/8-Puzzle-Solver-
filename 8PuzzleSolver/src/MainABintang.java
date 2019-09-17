@@ -196,7 +196,18 @@ class Solver{
         System.out.println("Solved in: "+nsteps);
         int temp=0;
         while(!steps.isEmpty()){
-            System.out.println("Step "+(temp++)+"\n"+steps.pop());
+            if(temp==0){
+                System.out.println("Initial State");
+                temp++;
+            }
+            else{
+                System.out.println("Step "+(temp++));
+            }
+            
+            String out = steps.pop().toString();
+            System.out.println(out.charAt(1)+" "+out.charAt(4)+" "+out.charAt(7)+"\n"+
+                    out.charAt(10)+" "+out.charAt(13)+" "+out.charAt(16)+"\n"+
+                    out.charAt(19)+" "+out.charAt(22)+" "+out.charAt(25)+"\n");
         }
     }
     
