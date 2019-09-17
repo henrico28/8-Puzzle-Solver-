@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @author Yovannanta Jong / 2017730006 
  * @author Henrico Leodra / 2017730038
  * 
- * Sumber: coding Yohan Kurnia Wijaya
+ * Referensi: coding Yohan Kurnia Wijaya
  */
 public class MainABintang {
     public static void main(String[] args) {
