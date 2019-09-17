@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.PriorityQueue;
 import java.util.Stack;
+import java.util.Scanner;
 
 
 /**
@@ -12,7 +13,13 @@ import java.util.Stack;
  */
 public class MainABintang {
     public static void main(String[] args) {
-        int[] currState = {1,9,3,4,2,5,7,8,6};
+        Scanner sc = new Scanner(System.in);
+        int[] currState = new int[9];
+        System.out.println("Masukkan nilai dari 1 hingga 9");
+        System.out.println("Initial state:");
+        for(int i=0;i<9;i++){
+            currState[i] = sc.nextInt();
+        }
         int pos=-1;
         for(int i = 0; i<currState.length; i++){
             if(currState[i]==9){
@@ -20,7 +27,7 @@ public class MainABintang {
                 break;
             }
         }
-        
+        System.out.println("");
         Solver s = new Solver(currState, pos);
         s.solve(); 
     }
