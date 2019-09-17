@@ -12,7 +12,7 @@ import java.util.Stack;
  */
 public class MainABintang {
     public static void main(String[] args) {
-        int[] currState = {1,0,3,4,2,5,7,8,6};
+        int[] currState = {1,9,3,4,2,5,7,8,6};
         int pos=-1;
         for(int i = 0; i<currState.length; i++){
             if(currState[i]==9){
@@ -159,7 +159,7 @@ class Solver{
         this.init = new NodeA(init, pos);
         this.hm = new HashMap();
         this.nodes = new PriorityQueue<>();
-        this.goal = "[1, 2, 3, 4, 5, 6, 7, 8, 0]";
+        this.goal = "[1, 2, 3, 4, 5, 6, 7, 8, 9]";
     }
     
     
@@ -196,7 +196,7 @@ class Solver{
         System.out.println("Solved in: "+nsteps);
         int temp=0;
         while(!steps.isEmpty()){
-            System.out.println("Step "+(temp++)+"\n"+steps.pop());
+            System.out.println("Step "+(temp++)+" "+steps.pop());
         }
     }
     
