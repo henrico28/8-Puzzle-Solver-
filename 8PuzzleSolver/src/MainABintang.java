@@ -196,7 +196,7 @@ class Solver{
         System.out.println("Solved in: "+nsteps);
         int temp=0;
         while(!steps.isEmpty()){
-            System.out.println("Step "+(temp++)+" "+steps.pop());
+            System.out.println("Step "+(temp++)+"\n"+steps.pop());
         }
     }
     
