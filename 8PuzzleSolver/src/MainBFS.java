@@ -3,7 +3,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * @author YovanJong & Henrico Leodra
+ * @author Yovannanta Jong / 2017730006 
+ * @author Henrico Leodra / 2017730038
+ * 
  * Reference dari YouTube
  * Judul videonya "8 Puzzle Breadth First search"
  * akun Oguzcan Adabuk dia pake C#
@@ -13,7 +15,8 @@ public class MainBFS {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] puzzle = new int[9];
-        System.out.println("Masukkan initial state:");
+        System.out.println("Masukkan nilai 0 hingga 8");
+        System.out.println("Initial state:");
         for(int i=0;i<9;i++){
             puzzle[i] = sc.nextInt();
         }

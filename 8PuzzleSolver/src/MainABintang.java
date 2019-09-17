@@ -8,7 +8,9 @@ import java.util.Scanner;
 
 
 /**
- * @author YovanJong & Henrico
+ * @author Yovannanta Jong / 2017730006 
+ * @author Henrico Leodra / 2017730038
+ * 
  * Sumber: coding Yohan Kurnia Wijaya
  */
 public class MainABintang {
